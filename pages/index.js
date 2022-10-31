@@ -35,13 +35,15 @@ export default function Home() {
       name: 'Ali chawal'
     }
   ]
-  const [arr, setArr] = useState()
+  const [arr, setArr] = useState([])
 
   const datahandler = (item) => {
-    setArr([])
+    let temp = arr;
+    temp.push(item);
+    console.log("temp", temp)
 
-    // setArr({ ...arr, item })
-    console.log(arr, 'ds')
+    // setArr([...arr, item])
+    // console.log([...arr, item])
 
   }
 
