@@ -72,3 +72,37 @@ a {
 .swiper-slide:nth-child(10n) {
   background-color: rgb(22, 214, 246);
 }
+.ali1 {
+  background: hsla(159, 35%, 45%, 1);
+
+  background: linear-gradient(
+    90deg,
+    hsla(159, 35%, 45%, 1) 0%,
+    hsla(176, 68%, 12%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(159, 35%, 45%, 1) 0%,
+    hsla(176, 68%, 12%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(159, 35%, 45%, 1) 0%,
+    hsla(176, 68%, 12%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#4A9B7F", endColorstr="#0A3431", GradientType=1 );
+}
+.ali{
+  background: hsla(186, 33%, 94%, 1);
+
+background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+background: -moz-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+background: -webkit-linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#EBF4F5", endColorstr="#B5C6E0", GradientType=1 );
+}

@@ -49,7 +49,7 @@ export default function Home() {
 
   return (
     <div className="w-full flex h-full mx-auto">
-      <div className="max-w-96 w-full h-[1007px] bg-gray-500">
+      <div className="max-w-96 w-full h-[1007px] ali">
         <div className="mt-44  ml-10 ">
           <>
             <Swiper
@@ -70,7 +70,7 @@ export default function Home() {
           </>
         </div>
       </div>
-      <div className="max-w-96 w-full h-[1007px] bg-red-400">
+      <div className="max-w-96 w-full h-[1007px] ali1">
         <div className="mt-44">
           <>
             <Swiper
