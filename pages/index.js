@@ -38,12 +38,12 @@ export default function Home() {
   const [arr, setArr] = useState([])
 
   const datahandler = (item) => {
-    let temp = arr;
-    temp.push(item);
-    console.log("temp", temp)
+    // let temp = arr;
+    // temp.push(item);
+    // console.log("temp", temp)
 
-    // setArr([...arr, item])
-    // console.log([...arr, item])
+    setArr([item,...arr])
+    console.log([item,...arr])
 
   }
 
@@ -73,19 +73,21 @@ export default function Home() {
       <div className="max-w-96 w-full h-[1007px] bg-red-400">
         <div className="mt-44">
           <>
-            {/* <Swiper
+            <Swiper
               effect={"cards"}
               grabCursor={true}
               modules={[EffectCards]}
               className="mySwiper "
 
             >
-              {arr?.map((item, idx) => {
+              {arr.map((item, idx) => {
                 return (
-                  <SwiperSlide key={idx}>{item}</SwiperSlide>
+                  <SwiperSlide key={idx} onClick={() => {
+                    datahandler(item)
+                  }}>{item.name}</SwiperSlide>
                 )
               })}
-            </Swiper> */}
+            </Swiper>
           </>
         </div>
       </div>
