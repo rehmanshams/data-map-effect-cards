@@ -5,47 +5,46 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
 
 export default function Home() {
-  const data = [
-    {
-      key: 1,
-      name: 'Afnan'
-    },
-    {
-      key: 2,
-      name: 'Ali'
-    },
-    {
-      key: 3,
-      name: 'Junaid'
-    },
-    {
-      key: 4,
-      name: 'Hamza'
-    },
-    {
-      key: 5,
-      name: 'Ali bonga'
-    },
-    {
-      key: 6,
-      name: 'Ali stupid'
-    },
-    {
-      key: 7,
-      name: 'Ali chawal'
-    }
-  ]
-  const [arr, setArr] = useState([])
+    const [arr, setArr] = useState([]);
+    const data = [
+        {
+            id: 1,
+            name: "Afnan",
+        },
+        {
+            id: 2,
+            name: "Ali",
+        },
+        {
+            id: 3,
+            name: "Junaid",
+        },
+        {
+            id: 4,
+            name: "Hamza",
+        },
+        {
+            id: 5,
+            name: "Ali bonga",
+        },
+        {
+            id: 6,
+            name: "Ali stupid",
+        },
+        {
+            id: 7,
+            name: "Ali chawal",
+        },
+    ];
 
-  const datahandler = (item) => {
-    // let temp = arr;
-    // temp.push(item);
-    // console.log("temp", temp)
-
-    setArr([item,...arr])
-    // console.log([item,...arr])
-
-  }
+    const datahandler = (item1) => {
+        let k = arr?.find((it) => it?.id === item1?.id);
+        if (k) {
+            return;
+        } else {
+            setArr((pre) => [item1, ...pre]);
+        }
+    };
 
   return (
     <div className="w-full flex h-full mx-auto">
@@ -80,14 +79,15 @@ export default function Home() {
               className="mySwiper "
 
             >
-              {arr.map((item, idx) => {
+              {arr.map((item) => {
                 return (
-                  <SwiperSlide key={idx} onClick={() => {
-                    datahandler(item)
-                  }}>{item.name}</SwiperSlide>
+                  <SwiperSlide   >
+                    {item.name}
+                  </SwiperSlide>
                 )
               })}
             </Swiper>
+
           </>
         </div>
       </div>
