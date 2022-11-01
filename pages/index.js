@@ -79,9 +79,9 @@ export default function Home() {
               className="mySwiper "
 
             >
-              {arr.map((item) => {
+              {arr.map((item, idx) => {
                 return (
-                  <SwiperSlide   >
+                  <SwiperSlide key={idx} >
                     {item.name}
                   </SwiperSlide>
                 )
