@@ -43,7 +43,7 @@ export default function Home() {
     // console.log("temp", temp)
 
     setArr([item,...arr])
-    console.log([item,...arr])
+    // console.log([item,...arr])
 
   }
 
@@ -56,7 +56,7 @@ export default function Home() {
               effect={"cards"}
               grabCursor={true}
               modules={[EffectCards]}
-              className="mySwiper "
+              className="mySwiper"
 
             >
               {data.map((item, idx) => {

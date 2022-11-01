@@ -34,11 +34,11 @@ a {
 }
 
 .swiper-slide:nth-child(1n) {
-  background-color: rgb(206, 17, 17);
+  background-color: rgb(246, 22, 99);
 }
 
 .swiper-slide:nth-child(2n) {
-  background-color: rgb(0, 140, 255);
+  background-color: rgb(22, 246, 185);
 }
 
 .swiper-slide:nth-child(3n) {
@@ -46,23 +46,23 @@ a {
 }
 
 .swiper-slide:nth-child(4n) {
-  background-color: rgb(211, 122, 7);
+  background-color: rgb(246, 175, 22);
 }
 
 .swiper-slide:nth-child(5n) {
-  background-color: rgb(118, 163, 12);
+  background-color: rgb(113, 246, 22);
 }
 
 .swiper-slide:nth-child(6n) {
-  background-color: rgb(180, 10, 47);
+  background-color: rgb(22, 214, 246);
 }
 
 .swiper-slide:nth-child(7n) {
-  background-color: rgb(35, 99, 19);
+  background-color: rgb(22, 246, 185);
 }
 
 .swiper-slide:nth-child(8n) {
-  background-color: rgb(0, 68, 255);
+  background-color: rgb(246, 22, 99);
 }
 
 .swiper-slide:nth-child(9n) {
@@ -70,5 +70,5 @@ a {
 }
 
 .swiper-slide:nth-child(10n) {
-  background-color: rgb(54, 94, 77);
+  background-color: rgb(22, 214, 246);
 }
