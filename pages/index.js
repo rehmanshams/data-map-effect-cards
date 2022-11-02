@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React, {useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/effect-cards";
@@ -48,6 +48,7 @@ export default function Home() {
 
   return (
     <div className="w-full flex h-full mx-auto">
+
       <div className="max-w-96 w-full h-[1007px] ali">
         <div className="mt-24  ml-10 ">
           <>
@@ -83,7 +84,7 @@ export default function Home() {
               {arr.map((item, idx) => {
                 return (
                   <SwiperSlide key={idx} >
-                    {item.name}
+                    {item.name}&nbsp;
                     {item.id}
                   </SwiperSlide>
                 )
