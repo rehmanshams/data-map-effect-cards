@@ -37,19 +37,19 @@ export default function Home() {
         },
     ];
 
-    const datahandler = (item1) => {
-        let k = arr?.find((it) => it?.id === item1?.id);
-        if (k) {
+    const datahandler = (item) => {
+        let ali_bonga = arr.find((ali_stupid) => ali_stupid.id === item.id);
+        if (ali_bonga) {
             return;
         } else {
-            setArr((pre) => [item1, ...pre]);
+            setArr((pre) => [item, ...pre]);
         }
     };
 
   return (
     <div className="w-full flex h-full mx-auto">
       <div className="max-w-96 w-full h-[1007px] ali">
-        <div className="mt-44  ml-10 ">
+        <div className="mt-24  ml-10 ">
           <>
             <Swiper
               effect={"cards"}
@@ -58,7 +58,7 @@ export default function Home() {
               className="mySwiper"
 
             >
-              {data.map((item, idx) => {
+            {data.map((item, idx) => {
                 return (
                   <SwiperSlide key={idx} onClick={() => {
                     datahandler(item)
@@ -66,11 +66,12 @@ export default function Home() {
                 )
               })}
             </Swiper>
+
           </>
         </div>
       </div>
       <div className="max-w-96 w-full h-[1007px] ali1">
-        <div className="mt-44">
+        <div className="mt-24">
           <>
             <Swiper
               effect={"cards"}
@@ -79,7 +80,7 @@ export default function Home() {
               className="mySwiper "
 
             >
-              {arr.map((item, idx) => {
+            {arr.map((item, idx) => {
                 return (
                   <SwiperSlide key={idx} >
                     {item.name}
