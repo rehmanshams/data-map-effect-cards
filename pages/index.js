@@ -5,46 +5,46 @@ import "swiper/css/effect-cards";
 import { EffectCards } from "swiper";
 
 export default function Home() {
-    const [arr, setArr] = useState([]);
-    const data = [
-        {
-            id: 1,
-            name: "Afnan",
-        },
-        {
-            id: 2,
-            name: "Ali",
-        },
-        {
-            id: 3,
-            name: "Junaid",
-        },
-        {
-            id: 4,
-            name: "Hamza",
-        },
-        {
-            id: 5,
-            name: "Ali bonga",
-        },
-        {
-            id: 6,
-            name: "Ali stupid",
-        },
-        {
-            id: 7,
-            name: "Ali chawal",
-        },
-    ];
+  const [arr, setArr] = useState([]);
+  const data = [
+    {
+      id: 1,
+      name: "Afnan",
+    },
+    {
+      id: 2,
+      name: "Ali",
+    },
+    {
+      id: 3,
+      name: "Junaid",
+    },
+    {
+      id: 4,
+      name: "Hamza",
+    },
+    {
+      id: 5,
+      name: "Ali bonga",
+    },
+    {
+      id: 6,
+      name: "Ali stupid",
+    },
+    {
+      id: 7,
+      name: "Ali chawal",
+    },
+  ];
 
-    const datahandler = (item) => {
-        let ali_bonga = arr.find((ali_stupid) => ali_stupid.id === item.id);
-        if (ali_bonga) {
-            return;
-        } else {
-            setArr((pre) => [item, ...pre]);
-        }
-    };
+  const datahandler = (item) => {
+    var ali_bonga = arr.find((ali_stupid) => ali_stupid.id === item.id);
+    if (ali_bonga) {
+      return;
+    } else {
+      setArr((itemset) => [item, ...itemset]);
+    }
+  };
 
   return (
     <div className="w-full flex h-full mx-auto">
@@ -58,7 +58,7 @@ export default function Home() {
               className="mySwiper"
 
             >
-            {data.map((item, idx) => {
+              {data.map((item, idx) => {
                 return (
                   <SwiperSlide key={idx} onClick={() => {
                     datahandler(item)
@@ -80,10 +80,11 @@ export default function Home() {
               className="mySwiper "
 
             >
-            {arr.map((item, idx) => {
+              {arr.map((item, idx) => {
                 return (
                   <SwiperSlide key={idx} >
                     {item.name}
+                    {item.id}
                   </SwiperSlide>
                 )
               })}
